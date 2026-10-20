@@ -1,50 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>První strana</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Osobní portfolio studenta, který se učí tvořit webové stránky.">
+  <title>Moje portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1><u>Liška obecná</u></h1>
-        <img src="https://www.cojeco.cz/images/descript/dfc45b9a4d5bd16babac15f6792ae340.jpg" width="300" alt="Liška obecná">
+  <header class="site-header">
+    <nav class="navigation container" aria-label="Hlavní navigace">
+      <a class="brand" href="#domu" aria-label="Domů">portfolio<span>.</span></a>
+      <ul class="navigation-links">
+        <li><a href="#domu">Domů</a></li>
+        <li><a href="#o-mne">O mně</a></li>
+        <li><a href="#projekty">Moje projekty</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>Liška obecná je nejčastější druh lišek v Evropě a Severní Americe.</p>
+  <main>
+    <section class="hero container" id="domu" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Školní projekt · Student · Začínající tvůrce webů</p>
+        <h1 id="hero-title">Ahoj, já jsem <span>Filip Gregor</span></h1>
+        <p class="hero-intro">Učím se tvořit webové stránky a tohle je místo, kde představuji svou práci a nápady.</p>
+        <a class="button" href="#projekty">Prohlédnout projekty <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
 
-    <h2>Popis</h2>
-    <p>Liška obecná je malá liška s dlouhým huňatým ocasem, dlouhýma špičatýma ušima a váží 5-10 kg. Je pokryta oranžovou srstí shora a bílou srstí zdola. Má zvýšenou inteligenci a schopnost se přizpůsobovat různým prostředím.</p>
-    
-    <h2>Chování</h2>
-<p>Liška si vyznačuje svoje teritorium trusem na okolí 7km. Její styl lovu je skok : na oběť skočí. Dokáže běhat rychlostí 40 km/h, asi jako psi. Stejně jako psi také štěkají : <a href="https://www.youtube.com/watch?v=BEgVVcVS5X4">Video štěkání</a></p>
+    <section class="about section-soft" id="o-mne" aria-labelledby="about-title">
+      <div class="container about-content">
+        <p class="eyebrow">Něco málo o mně</p>
+        <h2 id="about-title">Baví mě objevovat, co všechno jde vytvořit.</h2>
+        <p>Jsem student a učím se HTML a CSS. Rád zkouším nové věci, učím se od ostatních a zatím dělám jednoduché webové stránky.</p>
+      </div>
+    </section>
 
-    <h2>Liščí nory</h2>
-    <p>Liščí nora je vyhrabané obydlí v zemi, které slouží jako úkryt a prostor pro vychovávání mláďat. Lišky jsou převážně venku, ale při špatném počasí nebo ohrožení do nory zalezou.</p>
-    <p>Lišky mají nor několik, když se stane, že se s 1 něco stane, okamžitě přesnou své mláďata do jiné.</p>
-    <img src="https://tse1.explicit.bing.net/th/id/OIP.UVAG7eum2Ugc-exTGSdVIQHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="300" alt="liščí nora">
+    <section class="skills container" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="skills-title">Dovednosti</h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-icons" role="group" aria-label="HTML a CSS">
+            <i class="fa-brands fa-html5 skill-icon skill-icon-html" aria-hidden="true"></i>
+            <i class="fa-brands fa-css3-alt skill-icon skill-icon-css" aria-hidden="true"></i>
+          </div>
+          <h3>Portfolio web</h3>
+          <p>Vytvořil jsem jednoduché portfolio v HTML a CSS.</p>
+        </article>
+      </div>
+    </section>
 
-    <h2>Rozmnožování</h2>
-    <p>Lišky se rozmnožují v lednu a únoru. K rozmnožování dochází v norách, o jednu lišku se pere několik samců. V lišce se mláďata vyvíjí cca 60 dní a průměrně porodí 4 mláďata, která jsou slepá.</p>
-    <p>Mláďata žijí společně s matkou až do věku 3-4 měsíců.</p>
-    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Vulpes_vulpes_pup_sitting_on_stone.jpg/500px-Vulpes_vulpes_pup_sitting_on_stone.jpg?utm_source=cs.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" width="300" alt="liščí mládě">
-    
-    <h2>Potrava</h2>
-    <p>Liška obecná je všežravec, ale převážně masožravec. Živí se :</p>
-    <ul>
-        <li>Malými savci (krysy, myši, hraboši)</li>
-        <li>Ptáky</li>
-        <li>Plazy</li>
-        <li>Rybami</li>
-        <li>Žábami</li>
-        <li>Plazy</li>
-        <li>Hmyzem</li>
-        <li>Plody a ovocem</li>
-    </ul>
-    
-    <h2>Zdroje</h2>
-    <a href="https://cs.wikipedia.org/wiki/Li%C5%A1ka_obecn%C3%A1_(%C5%A1elma)">Wikipedie</a>
-    <a href="https://www.priroda.cz/clanek/liska-obecna-legendarni-krasny-a-vychytraly-obyvatel-nasi-prirody/">Příroda.cz</a>
-</div>
+    <section class="projects container" id="projekty" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="projects-title">Moje projekty</h2>
+        </div>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-art project-art-blue">
+            <div class="project-illustration" aria-hidden="true"></div>
+            <a class="project-link" href="https://gregorfilip.github.io/liska.html" target="_blank" rel="noopener noreferrer">Klikni zde</a>
+          </div>
+          <div class="project-info">
+            <p class="project-number">01 / HTML &amp; CSS</p>
+            <h3>Web o lišce obecné</h3>
+            <p>Naprogramoval jsem webovou stránku o lišce obecné pomocí HTML a CSS.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-soft" id="kontakt" aria-labelledby="contact-title">
+      <div class="contact-content">
+        <p class="eyebrow">Ozvěte se mi</p>
+        <h2 id="contact-title">Kontakt</h2>
+        <p>E-mail: <a href="mailto:filip.gregor@example.com">filip.gregor@example.com</a></p>
+        <p>Telefon: <a href="tel:+420601234567">+420 601 234 567</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand" href="#domu">portfolio<span>.</span></a>
+      <p>Vytvořeno s chutí učit se něco nového.</p>
+      <p>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgregorfilip.github.io%2Faiprojekt.github.io%2Findex.html">
+        <img style="border:0;width:88px;height:31px"
+             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+             alt="Ověřit CSS!" />
+    </a>
+</p>
+<a href="https://validator.w3.org/nu/?doc=https://gregorfilip.github.io/aiprojekt.github.io/index.html"
+   target="_blank">
+  <img src="https://www.w3.org/Icons/valid-html401"
+       alt="Validní HTML">
+</a>
+      <p class="copyright">© 2026 Filip Gregor</p>
+    </div>
+  </footer>
 </body>
 </html>
